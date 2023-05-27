@@ -1,0 +1,217 @@
+:root{
+    --primay: #bf30a7ff;
+    --second: #7a11bfff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+.svgback{
+    position: absolute;
+    fill: var(--second);
+    z-index: -100;
+}
+.backg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+/*-------------------------------header-------------------------------------------*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--second);
+}
+.git{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.icongit{
+    fill: white;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.icongit:hover{
+    fill: grey;
+}
+.svgp{
+    fill: white;
+    transition: .5s ease;
+}
+.svgp:hover{
+    fill: gray;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    justify-content: space-around;
+}
+.btnh{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+.btnh:hover{
+    color: grey;
+}
+
+
+/*---------------------------------content-------------------------------------*/
+
+.content{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: rgb(2,0,36);
+    background-image: url(m.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*--------------------------------cardhome--------------------------------------*/
+
+.cardhome{
+    width: 1300px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px black;
+    background-image: url(image164.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--second);
+    display: flex;
+    align-items: center;
+    transition: .1s ease;
+    overflow: hidden;
+}
+.txthome{
+    color: white;
+    height: 90%;
+    width: 70%;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    line-height: 40px;
+}
+.h1home{
+    margin-bottom: 40px;
+    font-size: 3rem;
+}
+.imghome{
+    width: 400px;
+    border-radius: 120px;
+    border-bottom: 2px solid var(--second);
+}
+
+/*---------------------------------------------skills-----------------------------------*/
+
+.cardskills{
+    width: 0;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: .1s;
+}
+.lskills{
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+li{
+    width: 200px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.575);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-image: linear-gradient(to top, var(--primay), var(--second)) 1;
+    border-width: 1px;
+    border-style: solid;
+    transition: .5s;
+}
+li:hover{
+    color: grey;
+    border-image: linear-gradient(to top, var(--second), var(--primay)) 1;
+}
+.imgskills{
+    max-width: 500px;
+    transition: .5s ease;
+}
+.contentCard{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divsale{
+    width: 0px;
+    height: 300px;
+}
+.divfront{
+    width: 0px;
+    height: 300px;
+    flex-direction: column;
+}
+.imgfront{
+    width: 200px;
+}
+.divleader{
+    width: 0px;
+    height: 300px;
+}
+.divdes{
+    width: 0px;
+    height: 500px;
+}
+.divtxt{
+    background-color: rgba(0, 0, 0, 0.555);
+    border-image: linear-gradient(to top, var(--primay), var(--second)) 1;
+    border-width: 0;
+    border-style: solid;
+    display: flex;
+    transition: .5s;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
